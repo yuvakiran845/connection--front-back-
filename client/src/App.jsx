@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/user")
+      .get("https://connection-front-back-4.onrender.com/api/user")
       .then((res) => setUser(res.data))
       .catch((err) => console.log(err));
   }, []); // ✅ important
